@@ -1,0 +1,39 @@
+html {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(51, 54, 56);
+}
+
+p {
+    color: rgb(110, 189, 199);
+}
+
+a {
+    color: rgb(190, 247, 242);
+}
+
+a:visited {
+    color: rgb(70, 91, 209);
+}
+
+a:hover, a:active {
+    color: aliceblue;
+}
+
+h1 {
+    color: rgb(54, 77, 204)
+}
+
+h2 {
+    color: rgb(96, 62, 190);
+}
+h3 {
+    color: rgb(125, 33, 148);
+}
+
+ul {
+    color: aquamarine;
+}
