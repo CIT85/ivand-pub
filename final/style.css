@@ -12,7 +12,7 @@ body {
     line-height: normal;
     color: rgb(247, 226, 255);
     display: grid;
-    background-image: url(../img/blame.png);
+    background-image: url(img/blame.png);
     background-size: cover;
     background-repeat:repeat-x;
     background-attachment:fixed;
