@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background-color: rgb(32, 30, 34);
+    line-height: normal;
+    color: rgb(247, 226, 255);
+    display: grid;
+    background-image: url(../img/blame.png);
+    background-size: cover;
+    background-repeat:repeat-x;
+    background-attachment:fixed;
+    background-position: left top;
+    position:absolute;
+}
+
+.grid {
+    grid-template-areas:
+        "hd hd"
+        "img cn"
+        "ft ft";
+    grid-template-columns: 1fr 4fr;
+}
+
+
+.container {
+    grid-area: cn;
+}
+
+.head {
+    grid-area: hd;
+}
+
+.limg {
+
+    grid-area: img;
+}
+
+.leftimg {
+    background-color: rgb(39, 36, 43);
+    border: 5px double purple;
+    padding: .5%;
+    position: sticky;
+    margin-left: 2%;
+    top: 8%;
+    max-width: 20%;
+    max-height: 100%;
+    float: left;
+}
+
+.leftimg img {
+    object-fit: scale-down;
+    max-width: 100%;
+    float: left;
+}
+
+.foot {
+    grid-area: ft;
+}
+
+
+.space {
+    padding: .5%;
+    margin: 10px;
+    margin-left: 25%;
+    max-width: 60%;
+    min-width: 50%;
+    display: grid;
+}
+
+.write {
+    background-color: rgb(39, 36, 43);
+    border: 5px double purple;
+    padding: .5%;
+    margin: 10px;
+    margin-left: 25%;
+    max-width: 60%;
+    min-width: 50%;
+    display: grid;
+    text-wrap: wrap;
+}
+
+
+table {
+    max-width: 100%;
+    border: 2px double purple;
+    background-color: rgb(32, 30, 34);
+}
+
+table img {
+    max-width: 50%; 
+    height: auto;
+}
+
+hr {
+    display: grid;
+    grid-row: span;
+}
+
+h1 {
+    color: rgb(199, 23, 76);
+    display: grid;
+}
+
+h2 {
+    color: rgb(219, 56, 146);
+    display: grid;
+}
+
+h3 {
+    color: rgb(223, 120, 197);
+    display: grid;
+}
+
+h4 {
+    color: rgb(198, 140, 206);
+    display: grid;
+}
+
+nav li {
+    display: inline;
+    margin-left: 10%;
+}
+
+nav li:nth-child(odd) {
+    background-color: rgb(47, 42, 53);
+}
+
+a {
+    color: brown;
+}
+
+a:visited {
+    color: rgb(122, 22, 84);
+}
+
+a:hover,
+a:focus {
+    color: aliceblue;
+}
+
+.cover {
+    max-width: 100%;
+    height: auto;
+}
+
+
+header ul {
+    list-style-type: none;
+}
+
+figure {
+    background-color: rgb(32, 30, 34);
+    border: 2px double purple;
+}
+
+/* Media Queries(Common Media Query breakpoints) */
+/* Mobile */
+@media screen and (max-width: 481px) {
+    .grid {
+        grid-template-areas:
+            "hd"
+            "cn"
+            "ft";
+        grid-template-rows: 1fr 8fr 1fr;
+    }
+
+    .leftimg {
+        position: absolute;
+        left: -1000px;
+    }
+
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-align: center;
+        background-color: rgb(32, 30, 34);
+        line-height: normal;
+        color: rgb(247, 226, 255);
+        display: grid;
+    }
+
+    .space {
+        padding: 0px;
+        margin: 0px;
+        margin-left: 0px;
+        max-width: 100%;
+        min-width: 100%;
+        display: grid;
+    }
+
+    .write {
+        background-color: rgb(39, 36, 43);
+        border: 5px double purple;
+        padding: .5%;
+        margin: 10px;
+        width: 100%;
+        min-width: 50%;
+        display: grid;
+        text-wrap: wrap;
+    }
+
+}
+
+/* iPad + tablets */
+
+@media screen and (max-width:768px) {
+    .grid {
+        grid-template-areas:
+            "hd"
+            "cn"
+            "ft";
+        grid-template-rows: 1fr 8fr 1fr;
+    }
+
+    .leftimg {
+        position: absolute;
+        left: -1000px;
+    }
+
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-align: center;
+        background-color: rgb(32, 30, 34);
+        line-height: normal;
+        color: rgb(247, 226, 255);
+        display: grid;
+    }
+
+    .space {
+        padding: .5%;
+        margin: 10px;
+        max-width: 100%;
+        min-width: 50%;
+        display: grid;
+    }
+
+    .write {
+        background-color: rgb(39, 36, 43);
+        border: 5px double purple;
+        padding: .5%;
+        margin: 10px;
+        max-width: 95%;
+        min-width: 50%;
+        display: grid;
+        text-wrap: wrap;
+    }
+
+    .cover {
+        min-width: 100%;
+    }
+}
+
+
+/* Small screens and Laptops */
+
+@media screen and (max-width:1024px) {
+    .grid {
+        grid-template-areas:
+            "hd hd"
+            "img cn"
+            "ft ft";
+        grid-template-columns: 1fr 4fr;
+    }
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-align: center;
+        background-color: rgb(32, 30, 34);
+        line-height: normal;
+        color: rgb(247, 226, 255);
+        display: grid;
+    }
+
+    .space {
+        padding: .5%;
+        margin: 10px;
+        max-width: 100%;
+        min-width: 50%;
+        display: grid;
+    }
+}
+
+/* Desktop and Large Screen */
+
+
+@media screen and (max-width:1200px) {
+    .grid {
+        grid-template-areas:
+            "hd hd"
+            "img cn"
+            "ft ft";
+        grid-template-rows: 1fr 8fr 1fr;
+    }
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-align: center;
+        background-color: rgb(32, 30, 34);
+        line-height: normal;
+        color: rgb(247, 226, 255);
+        display: grid;
+    }
+
+    .space {
+        padding: .5%;
+        margin: 10px;
+        margin-left: 25%;
+        max-width: 60%;
+        min-width: 50%;
+        display: grid;
+    }
+}
+
+/* Largest */
+
+
+@media screen and (min-width:1200px) {
+    figure {
+        display: inline;
+        flex-flow: wrap;
+        float: left;
+    }
+    .maincn p {
+        display: inline;
+        float: right;
+    }
+
+    
+header {
+    position: sticky;
+    background-color: black;
+    max-width: 20%;
+    margin-left: 2%;
+    border: 5px double purple;
+}
+}
+
+
+
+/* Setting palette */
+
+.palette {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: double 2px purple;
+}
+
+.p1 {
+    background-color: rgb(32, 30, 34);
+}
+
+.p2 {
+    background-color: rgb(247, 226, 255);
+}
+
+.p3 {
+    background-color: purple;
+}
+
+.p4 {
+    background-color: rgb(199, 23, 76);
+}
+
+.p5 {
+    background-color: rgb(219, 56, 146);
+}
+
+.p6 {
+    background-color: rgb(223, 120, 197);
+}
+
+.p7 {
+    background-color: rgb(198, 140, 206);
+}
+
+.p8 {
+    background-color: brown;
+}
+
+.p9 {
+    background-color: rgb(122, 22, 84);
+}
+
+.p10 {
+    background-color: aliceblue;
+}
