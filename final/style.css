@@ -20,6 +20,10 @@ body {
     background-position: absolute;
 }
 
+main {
+    min-height: 100vh;
+}
+
 .grid {
     grid-template-areas:
         "hd hd"
