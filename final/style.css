@@ -171,6 +171,8 @@ figure {
     background-color: rgb(32, 30, 34);
     border: 2px double purple;
     padding: 10px;
+    margin: 10px;
+    
 }
 
 
@@ -187,7 +189,19 @@ footer {
     background-color: black;
     padding: 10px;
     border-top: 5px double purple;
+    margin-top: 10px;
 }
+
+/* Text Emphasis */
+.whites {
+    color: white;
+}
+
+.bold {
+    color: red;
+    font-size: 1.5rem;
+}
+
 
 /* Media Queries(Common Media Query breakpoints) */
 /* Mobile */
