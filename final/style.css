@@ -202,6 +202,16 @@ section {
     max-width: 100%;
 }
 
+.shiftl {
+    display: inline;
+    float: left;
+}
+
+.shiftr {
+    display: inline;
+    float: right;
+}
+
 /* Text Emphasis */
 .whites {
     color: white;

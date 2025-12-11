@@ -52,20 +52,78 @@
             <section>
                 <h3>VA Proxy Demo</h3>
                 <figure class="leftfig">
-                    <img src="img/va_proxy.jpg"
-                        alt="Two monoeyed robotic creatures wielding swords face eachother across the image"
-                        title="VA Proxy steam capsule" width="500" height="286" class="cover" loading="lazy">
+                    <img src="img/takoha.png"
+                        alt="Manga style illustration of a man with circular glasses and flared out hair. He looks irritated"
+                        title="Picture" width="300" class="cover" loading="lazy">
                     <figcaption>
                         <p>
-                            Source: <a href="https://store.steampowered.com/app/2063390/VA_Proxy/"
-                                target="_blank">Steam</a>
+                            Imagine this is me
                         </p>
                     </figcaption>
                 </figure>
 
                 <p class="maincn"> 
-                    
+                    I am Ivan. I created this site because it was required for my HTML/CSS class. The reason I chose this theme in particular is because I have a desire for a place to write about things I've read or watched, but sites like twitter are too shortform, and sites like letterboxd feel too public. 
                 </p>
+                <p class="maincn">
+                    I like a variety of things, but my primary interests are in music, illustration, and video games. My favorite game director is suda51, but my favorite genre is between fighting games, rpgs, and shooters, none of which are games he does.
+                </p>
+                <p>
+                    I hate using pictures of myself and I don't want any of my physical self online. As such the Takoha to the left will act as my representative. I have the same glasses.
+                </p>
+                <figure class="rightfig">
+                    <img src="img/kurayami.png" alt="A set of comic panels of a girl sending stickers to another through a smartphone" width="700">
+                </figure>
+            </section>
+        </article>
+
+        <article class="write cn">
+            <h2>Contact Form</h2>
+            <section>
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset class="shiftl">
+                        <legend>Name</legend>
+                        <p>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Your" autocomplete="on" required
+                        autofocus>
+                </p>
+                <p>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" autocomplete="on" required>
+                </p>
+                </fieldset>
+                <fieldset class="shiftr">
+                    <legend>Purpose</legend>
+                    <p>
+                        <input type="checkbox" name="purpose" id="question" value="question">
+                        <label for="question">Question</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="purpose" id="message" value="message">
+                        <label for="message">Message</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="purpose" id="request" value="request">
+                        <label for="request">Request</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="purpose" id="misc" value="misc">
+                        <label for="misc">Misc</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                    <br>
+                    <button type="submit">Submit!</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Reset!</button>
+                </fieldset>
+                
+                </form>
             </section>
         </article>
 
@@ -73,7 +131,7 @@
     
         <footer>
             <p id="footer">
-                &lt;&lt;&lt; &copy; <a href="about.html">Ivan D</a> &gt;&gt;&gt;
+                &lt;&lt;&lt; &copy; <a href="contact.html">Ivan D</a> &gt;&gt;&gt;
             </p>
 
             <p>
