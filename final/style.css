@@ -359,10 +359,16 @@ footer {
 
 
 @media screen and (min-width:1200px) {
-    figure {
+    .leftfig {
         display: inline;
         flex-flow: wrap;
         float: left;
+    }
+
+    .rightfig {
+        display: inline;
+        flex-flow: wrap;
+        float: right;
     }
 
     .maincn p {
