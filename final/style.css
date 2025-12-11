@@ -183,6 +183,7 @@ header {
     padding: 10px;
     border-bottom: 5px double purple;
     z-index: 10;
+    margin-bottom: 10px;
 }
 
 footer {
