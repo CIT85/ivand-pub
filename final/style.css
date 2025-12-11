@@ -127,10 +127,6 @@ nav li {
     margin-left: 10%;
 }
 
-nav li:nth-child(odd) {
-    background-color: rgb(47, 42, 53);
-}
-
 a {
     color: brown;
 }
@@ -337,7 +333,7 @@ figure {
     }
 
     
-header {
+nav {
     position: sticky;
     background-color: black;
     max-width: 20%;
