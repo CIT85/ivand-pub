@@ -1,5 +1,6 @@
 * {
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: content-box;
 }
 
@@ -14,8 +15,8 @@ body {
     display: grid;
     background-image: url(img/blame.png);
     background-size: cover;
-    background-repeat:repeat-x;
-    background-attachment:fixed;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
     background-position: absolute;
 }
 
@@ -85,41 +86,53 @@ body {
     text-wrap: wrap;
 }
 
+p {
+    margin: 10px;
+}
+
 
 table {
     max-width: 100%;
     border: 2px double purple;
     background-color: rgb(32, 30, 34);
+    padding: 10px;
 }
 
 table img {
-    max-width: 50%; 
+    max-width: 50%;
     height: auto;
 }
 
 hr {
     display: grid;
-    grid-row: span;
 }
 
 h1 {
     color: rgb(199, 23, 76);
     display: grid;
+    padding: 10px;
 }
 
 h2 {
     color: rgb(219, 56, 146);
     display: grid;
+    padding: 10px;
 }
 
 h3 {
     color: rgb(223, 120, 197);
     display: grid;
+    padding: 10px;
 }
 
 h4 {
     color: rgb(198, 140, 206);
     display: grid;
+    padding: 10px;
+}
+
+h5 {
+    padding: 10px;
 }
 
 nav li {
@@ -153,6 +166,23 @@ header ul {
 figure {
     background-color: rgb(32, 30, 34);
     border: 2px double purple;
+    padding: 10px;
+}
+
+
+header {
+    position: sticky;
+    top: 0%;
+    background-color: black;
+    padding: 10px;
+    border-bottom: 5px double purple;
+    z-index: 10;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+    border-top: 5px double purple;
 }
 
 /* Media Queries(Common Media Query breakpoints) */
@@ -266,6 +296,7 @@ figure {
             "ft ft";
         grid-template-columns: 1fr 4fr;
     }
+
     body {
         font-family: 'Courier New', Courier, monospace;
         font-size: 1rem;
@@ -297,6 +328,7 @@ figure {
             "ft ft";
         grid-template-rows: 1fr 8fr 1fr;
     }
+
     body {
         font-family: 'Courier New', Courier, monospace;
         font-size: 1rem;
@@ -316,6 +348,7 @@ figure {
         min-width: 50%;
         display: grid;
     }
+
 }
 
 /* Largest */
@@ -327,19 +360,12 @@ figure {
         flex-flow: wrap;
         float: left;
     }
+
     .maincn p {
         display: inline;
         float: right;
     }
 
-    
-nav {
-    position: sticky;
-    background-color: black;
-    max-width: 20%;
-    margin-left: 2%;
-    border: 5px double purple;
-}
 }
 
 
